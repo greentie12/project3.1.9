@@ -1,8 +1,3 @@
-$(document).ready(function() {
-	fizzBuzz();
-});
-
-function fizzBuzz() {
 
 	var num = 1;
 	while (num < 101 ) {
@@ -13,18 +8,21 @@ function fizzBuzz() {
 	num++;
 	}
 	else if (num%3 == 0) {
-	console.log("fizz");	
+	document.write('Fizz');
+	document.write('<br>');
+	//console.log("fizz");	
 	num++;
 	}
-	else if (num%5 == 0) {
-	console.log("buzz");
+	else if (num%5 == 0) {		
+	document.write('Buzz');
+	document.write('<br>');	
+	//console.log("buzz");
 	num++
 	}
 	else {
-	console.log(num);
+	document.write(num);
+	document.write('<br>');
+	//console.log(num);
 	num++;
 	}
 	}
-};
-
-
